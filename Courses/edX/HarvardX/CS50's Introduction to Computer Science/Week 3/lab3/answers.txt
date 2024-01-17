@@ -1,0 +1,11 @@
+sort1 uses: bubble
+
+How do you know?: Bubble sort is known for going through the sorted data in the least time. This went through the sorted data in lowest of time, on this account we can conclude that this was bubble sort.
+
+sort2 uses: merge
+
+How do you know?: Merge sort is known for sorting large data in the shortest time. This sorted the biggest of data in lowest of time, on this account we can conclude that this was merge sort.
+
+sort3 uses: selection
+
+How do you know?: As this was neither bubble nor merge sort, this remaining sort can be identified as selection sort.

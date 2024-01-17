@@ -1,0 +1,48 @@
+    // Guiding Variables
+    int bucket = 0;
+    int lastBucket = N - 1;
+    node *currentNode = NULL;
+    node *freeNode = NULL;
+    int i = 0;
+
+    // Initialize
+    currentNode = table[bucket];
+
+    while (bucket <= lastBucket)
+    {
+        if (table[bucket] == NULL && i == 0)
+        {
+            bucket++;
+            if (bucket == 26)
+            {
+                continue;
+            }
+            currentNode = table[bucket];
+            continue;
+        }
+        freeNode = currentNode;
+        currentNode = currentNode->next;
+        free(freeNode);
+        table[bucket] = NULL;
+        i++;
+        if (currentNode->next == NULL)
+        {
+            free(currentNode);
+            bucket++;
+            if (bucket == 26)
+            {
+                continue;
+            }
+            currentNode = table[bucket];
+            i = 0;
+            continue;
+        }
+    }
+    if (bucket > lastBucket)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }

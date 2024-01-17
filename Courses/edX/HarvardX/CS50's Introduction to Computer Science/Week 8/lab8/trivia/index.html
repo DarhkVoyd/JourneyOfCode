@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What college did Ted, Marshall and Lily all go to?</h3>
+                <button type="button" id="harvard">Harvard University</button>
+                <button type="button" id="yale">Yale University</button>
+                <button type="button" id="princeton">Princeton University</button>
+                <button type="button" id="wesleyan">Wesleyan University</button>
+                <button type="button" id="mit">Massachusetts Institute of Technology</button>
+                <p id="mcqResult"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What fruit is on Ted's bedside table after waking up from a drunken night?</h3>
+                <input type="text" placeholder="Enter your answer">
+                <button type="button" id="checkAnswerbtn">Check Answer</button>
+                <p id="freeResult"></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        // TODO: Add code to check answers to questions
+        // MCQ Questions
+        const harvard = document.getElementById('harvard');
+        const yale = document.getElementById('yale');
+        const princeton = document.getElementById('princeton');
+        const wesleyan = document.getElementById('wesleyan');
+        const mit = document.getElementById('mit');
+        const mcqResult = document.getElementById('mcqResult');
+        
+        // Free Response Questions
+        const input = document.querySelector('input')
+        const checkAnswerbtn = document.getElementById('checkAnswerbtn');
+        const freeResult = document.getElementById('freeResult');
+
+        harvard.addEventListener('click', function () {mcqAnswer(harvard);});
+        yale.addEventListener('click', function () {mcqAnswer(yale);});
+        princeton.addEventListener('click', function () {mcqAnswer(princeton);});
+        wesleyan.addEventListener('click', function () {mcqAnswer(wesleyan);});
+        mit.addEventListener('click', function () {mcqAnswer(mit);});
+        checkAnswerbtn.addEventListener('click', checkAnswer);
+
+
+        function mcqAnswer(choice)
+        {
+            if (choice == wesleyan)
+            {
+                mcqResult.textContent = 'Correct';
+                mcqResult.style.color = 'lightgreen';
+                mcqResult.style.fontSize = '18px';
+                wesleyan.style.backgroundColor = 'lightgreen';
+                harvard.style.backgroundColor = '';
+                yale.style.backgroundColor = '';
+                princeton.style.backgroundColor = '';
+                mit.style.backgroundColor = '';
+            }
+            else {
+                mcqResult.textContent = 'Incorrect';
+                mcqResult.style.color = 'lightcoral';
+                mcqResult.style.fontSize = '18px';
+                wesleyan.style.backgroundColor = '';
+                harvard.style.backgroundColor = '';
+                yale.style.backgroundColor = '';
+                princeton.style.backgroundColor = '';
+                mit.style.backgroundColor = '';
+                choice.style.backgroundColor = 'lightcoral';
+            }
+        }
+        function checkAnswer()
+        {
+            userInput = input.value.toUpperCase();
+            if (userInput == 'PINEAPPLE')
+            {
+                freeResult.textContent = 'Correct';
+                input.style.backgroundColor = 'lightgreen';
+                freeResult.style.color = 'lightgreen';
+                freeResult.style.fontSize = '18px';
+            }
+            else {
+                freeResult.textContent = 'Incorrect';
+                input.style.backgroundColor = 'lightcoral';
+                freeResult.style.color = 'lightcoral';
+                freeResult.style.fontSize = '18px';
+            }
+        }
+    </script>
+</html>

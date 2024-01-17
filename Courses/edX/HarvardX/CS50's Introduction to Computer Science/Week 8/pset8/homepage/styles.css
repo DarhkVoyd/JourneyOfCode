@@ -1,0 +1,263 @@
+@font-face {
+	font-family: 'Adam';
+	src: url('fonts/adam/Adam-Bold.ttf');
+}
+
+body {
+	color: white;
+	font-family: 'Adam';
+}
+
+/* Nav Bar */
+
+.logo {
+	font-size: 42px;
+}
+
+#nav-bar {
+	position: fixed;
+	width: 100vw;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 25px 10px 25px;
+}
+
+.nav-wrapper {
+	display: flex;
+}
+
+ul#nav-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 10px 25px 10px 25px;
+	overflow: hidden;
+}
+
+li.nav-item {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	list-style: none;
+}
+
+.icon {
+	display: none;
+}
+
+a {
+	font-size: 18px;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 15px;
+}
+
+a.active {
+	color: white;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 15px;
+}
+
+/* SlideShow */
+
+.carousel .carousel-item {
+	height: 100vh;
+}
+
+.carousel-item img {
+	position: absolute;
+	object-fit: cover;
+	top: -50px;
+	left: 0;
+	min-height: 100vh;
+}
+
+/* Main Text */
+
+.intro {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin: auto;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px 20px 10px 20px;
+}
+
+.intro-title {
+	font-size: 300px;
+	text-transform: uppercase;
+}
+
+/* HomePage */
+
+.main-container {
+	z-index: 10;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100vh;
+}
+
+.card {
+	z-index: 11;
+	background-color: rgb(250, 250, 250);
+	padding: 3rem;
+	margin: 5rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: fit-content;
+	color: black;
+}
+
+h3.card-heading {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+img.card-img {
+	border-radius: 5px;
+	max-width: 350px;
+	width: 80%;
+}
+
+.carded-image {
+	z-index: 11;
+	margin: 5rem;
+	border-radius: 5px;
+}
+
+img.backgrounds {
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Teachers Page */
+
+.teacher-card {
+	margin: 4rem;
+	width: fit-content;
+}
+
+img[alt='David J Malan'],
+img[alt='Doug Lloyd'],
+img[alt='Brian Yu'] {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 60%;
+	clip-path: circle();
+}
+
+p.teacher-about {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font-size: min(16px, 1.2vw);
+}
+
+/* Contacts Page */
+
+#contacts-card {
+	background-color: transparent;
+}
+
+.contacts-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+#contact-us {
+	margin-bottom: 1px;
+	text-transform: uppercase;
+	font-size: 38px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #333;
+	background-color: white;
+	padding: 0.2em;
+	border-radius: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+#contacts {
+	font-size: 18px;
+	margin-top: 6em;
+	flex: 1;
+	text-align: center;
+	padding: 1.5em;
+	width: fit-content;
+	background-color: white;
+	border-radius: 10px;
+}
+
+form {
+	flex: 2;
+	padding: 5em;
+	width: 10px;
+	height: auto;
+}
+
+input,
+textarea {
+	margin-bottom: 2em;
+	width: 100%;
+	padding: 0.6em;
+	resize: vertical;
+	max-height: 15em;
+	border-radius: 5px;
+}
+
+button {
+	background-color: white;
+	padding: 0.3em 0.7em 0.3em 0.7em;
+	border-radius: 5px;
+}
+
+/* About Page */
+
+.about-container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: fit-content;
+}
+
+.about-card {
+	width: fit-content;
+	padding: 3rem;
+	margin: 1rem 3em 1em 3em;
+	background-color: rgb(245, 245, 245);
+	font-size: 18px;
+}
+
+#about-heading {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-card:first-child {
+	font-style: italic;
+	font-size: 18.5px;
+}

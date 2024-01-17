@@ -1,0 +1,177 @@
+/* When the screen is less than 1080 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-list (.icon) */
+@media screen and (max-width: 1080px) {
+	#nav-list li {
+		display: none;
+	}
+	#nav-list li.icon {
+		display: block;
+	}
+	#nav-bar {
+		display: flex;
+		align-items: center;
+		background-color: black;
+		z-index: 12;
+		padding: 0px;
+		height: 8vh;
+	}
+}
+
+/* The "responsive" class is added to the nav-list with JavaScript when the user clicks on the icon. This class makes the nav-list look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1080px) {
+	h1.responsive {
+		display: none;
+	}
+
+	#nav-bar.responsive li.icon {
+		position: absolute;
+		left: 30px;
+		top: 8px;
+	}
+
+	#nav-bar.responsive {
+		display: block;
+		height: 100vh;
+		width: 100%;
+	}
+
+	#nav-bar.responsive ul {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#nav-bar.responsive li {
+		font-size: 48px;
+		display: block;
+		text-align: center;
+	}
+}
+
+/* Mobile Sceen */
+@media screen and (max-width: 1080px) {
+	/* Nav-Bar */
+
+	.logo {
+		font-size: min(15vw, 42px);
+		position: relative;
+		top: 8px;
+		margin-left: 1em;
+	}
+
+	/* SlideShows */
+
+	.carousel .carousel-item {
+		height: 100vh;
+	}
+
+	.carousel-item img {
+		top: 0;
+	}
+
+	/* Main Text */
+
+	.intro-title {
+		font-size: 30vw;
+	}
+
+	/* HomePage */
+
+	.main-container {
+		flex-direction: column;
+		align-items: center;
+		background-image: url(img/6.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	.carded-image {
+		margin: 2rem;
+		width: 80vw;
+		height: auto;
+	}
+
+	img.backgrounds {
+		display: none;
+	}
+
+	.card {
+		padding: 2rem 2rem 2rem 2rem;
+		margin: 2rem;
+	}
+
+	/* Teachers Page */
+
+	#instructors {
+		background-image: url(img/8.jpg);
+	}
+
+	img[alt='David J Malan'],
+	img[alt='Doug Lloyd'],
+	img[alt='Brian Yu'] {
+		max-width: 200px;
+	}
+
+	p.teacher-about {
+		font-size: 16px;
+	}
+
+	/* Contacts Page */
+
+	#contacts-container {
+		background-image: url(img/contact.jpg);
+	}
+
+	.contacts-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contact-us {
+		font-size: min(10vw, 38px);
+		padding: 0.2em;
+	}
+
+	#contacts {
+		font-size: min(5vw, 18px);
+	}
+
+	form {
+		margin-top: 3em;
+		padding: 1em;
+		width: 80vw;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
+
+	/* About Page */
+
+	.about-card {
+		background-color: rgb(240, 240, 240);
+		font-size: min(4.5vw, 17px);
+	}
+
+	.about-container {
+		background-image: none;
+	}
+
+	.about-card:first-child {
+		font-size: min(5vw, 18.5px);
+	}
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<!-- MDB -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+			rel="stylesheet"
+		/>
+		<link href="styles.css" rel="stylesheet" />
+		<link href="media.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" async></script>
+		<title>CS50's Introduction to Computer Science</title>
+	</head>
+	<body>
+		<!-- The Nav Bar -->
+		<div id="nav-bar">
+			<div class="nav-header">
+				<header><h1 class="logo">CS50</h1></header>
+			</div>
+			<div class="nav-wrapper">
+				<nav>
+					<ul id="nav-list">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item">
+							<a href="teachers.html" class="active">Teachers</a>
+						</li>
+						<li class="nav-item"><a href="contact.html">Contact</a></li>
+						<li class="nav-item"><a href="about.html">About</a></li>
+						<li class="nav-item icon">
+							<a href="javascript:void(0);" onclick="myFunction()"
+								><i class="fa fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="intro">
+			<h2 class="intro-title">CS50</h2>
+		</div>
+		<!-- The Carousel Slide -->
+
+		<div class="carousel slide" data-bs-ride="carousel" id="Home">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="2500">
+					<img
+						src="img/1.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
+				</div>
+				<div class="carousel-item" data-bs-interval="2500">
+					<img
+						src="img/2.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
+				</div>
+				<div class="carousel-item" data-bs-interval="2500">
+					<img
+						src="img/3.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
+				</div>
+				<div class="carousel-item" data-bs-interval="2500">
+					<img src="img/4.jpg" class="d-block w-100" alt="This is CS50 Bus" />
+				</div>
+				<div class="carousel-item" data-bs-interval="2500">
+					<img
+						src="img/5.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main Section -->
+
+		<!-- First Wrapper -->
+		<div class="main-container" id="instructors">
+			<!-- <h2>About the instructors</h2> -->
+			<div class="card teacher-card">
+				<h3 class="card-heading">David J. Malan</h3>
+				<img class="card-img" src="img/david3.jpg" alt="David J Malan" />
+				<p class="teacher-about">
+					<b>David J. Malan</b> is Gordon McKay Professor of the Practice of
+					Computer Science at Harvard University. He teaches Computer Science
+					50, otherwise known as CS50, which is among Harvard University’s
+					largest courses, one of Yale University’s largest courses, and edX’s
+					largest MOOC.
+				</p>
+			</div>
+
+			<div class="card teacher-card">
+				<h3 class="card-heading">Doug Lloyd</h3>
+				<img class="card-img" src="img/doug.jpeg" alt="Doug Lloyd" />
+				<p class="teacher-about">
+					<b>Doug</b> is a Senior Preceptor in Computer Science in the Division
+					of Continuing Education at Harvard University. He received his A.B. in
+					Computer Science from Harvard in 2009.
+				</p>
+			</div>
+
+			<div class="card teacher-card">
+				<h3 class="card-heading">Brian Yu</h3>
+				<img class="card-img" src="img/brian.png" alt="Brian Yu" />
+				<p class="teacher-about">
+					<b>Brian</b> is a Senior Preceptor in Computer Science in the Division
+					of Continuing Education at Harvard University. He received his A.B. in
+					Computer Science and Linguistics from Harvard in 2019.
+				</p>
+			</div>
+
+			<img class="backgrounds" src="img/8.jpg" alt="Foggy Forest" />
+		</div>
+
+		<!-- Foooter -->
+		<footer class="bg-dark text-center text-white">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Social media -->
+				<div class="mb-4">
+					<!-- Github -->
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="https://github.com/dmalan"
+						target="_blank"
+						role="button"
+						><i class="fab fa-github"></i
+					></a>
+
+					<!-- Instagram -->
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="https://www.instagram.com/davidjmalan/"
+						target="_blank"
+						role="button"
+						><i class="fab fa-instagram"></i
+					></a>
+
+					<!-- Linkedin -->
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="https://www.linkedin.com/in/malan/"
+						target="_blank"
+						role="button"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+
+					<!-- Twitter -->
+					<a
+						class="btn btn-outline-light btn-floating m-1"
+						href="https://twitter.com/davidjmalan"
+						target="_blank"
+						role="button"
+						><i class="fab fa-twitter"></i
+					></a>
+				</div>
+				<!-- Section: Social media -->
+			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+				© 2022 Copyright:
+				<a class="text-white" href="#Home">Go to Top</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+	</body>
+</html>
