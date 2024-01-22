@@ -1,2 +1,11 @@
+# MacOS
 **/.DS_Store
+
+# Javascript
+**/node_modules
+
+# Python
 **/venv
+
+# Rust
+**/target
